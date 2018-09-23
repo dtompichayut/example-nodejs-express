@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:8.11.1-stretch
     working_directory: ~/repo
     steps:
-      - checkuot
+      - checkout
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.jon"}}
